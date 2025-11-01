@@ -4,6 +4,8 @@
 
 Combining Claude Code slash commands, automation scripts, and the GitHub CLI for a comprehensive organization management solution.
 
+📊 **[View Project Board](https://github.com/users/macjunkins/projects/18)** | 📋 **[View Milestones](https://github.com/macjunkins/github-org-toolkit/milestones)** | 📖 **[Read Roadmap](Roadmap.md)** | 🐛 **[Report Issues](https://github.com/macjunkins/github-org-toolkit/issues)**
+
 ---
 
 ## Overview
@@ -348,41 +350,83 @@ Contributions welcome! This toolkit is designed to be:
 - **Specific** enough to solve real problems
 - **Extensible** via custom commands and scripts
 
-**To contribute:**
-1. Fork the repository
-2. Create a feature branch
-3. Add your command/script with documentation
-4. Submit a pull request
+### 🚀 Want to Contribute?
 
-**See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.**
+1. Check the [project board](https://github.com/users/macjunkins/projects/18) for open issues
+2. Look for issues labeled [`help wanted`](https://github.com/macjunkins/github-org-toolkit/labels/help%20wanted) or [`good first issue`](https://github.com/macjunkins/github-org-toolkit/labels/good%20first%20issue)
+3. Comment on an issue to claim it
+4. Follow the workflow in [CONTRIBUTING.md](CONTRIBUTING.md)
+
+**Current Focus:** [Phase 2: Org Automation](https://github.com/macjunkins/github-org-toolkit/milestone/1) - 10 open issues
+
+**Full guidelines:** [CONTRIBUTING.md](CONTRIBUTING.md) | **Product Roadmap:** [Roadmap](Roadmap.md)
 
 ---
 
 ## Roadmap
 
+**📊 [View Full Roadmap on Project Board](https://github.com/users/macjunkins/projects/18)** | **📋 [View All Milestones](https://github.com/macjunkins/github-org-toolkit/milestones)**
+
 ### Phase 1: Essential Commands ✅ (Complete)
-- [x] Generic GitHub workflow commands
-- [x] Directory structure
-- [x] Planning documentation
+**Status:** Released
+**Milestone:** v1.0-phase-1-essentials
+
+- [x] Generic GitHub workflow commands (`/gh-work`, `/gh-finish`, etc.)
+- [x] Project directory structure
+- [x] Planning documentation and PRD
+
+---
 
 ### Phase 2: Org Automation 🚧 (In Progress)
-- [ ] `/triage-summary` command
-- [ ] `/project-status` command
-- [ ] `/archival-status` command
-- [ ] `repo-ownership-audit.py` script
-- [ ] `archive-repos-batch.sh` script
+**Status:** Active Development
+**Milestone:** [v1.1-phase-2-org-automation](https://github.com/macjunkins/github-org-toolkit/milestone/1) (10 open issues)
+**Target:** Dec 31, 2025
+
+**Slash Commands:**
+- [ ] `/triage-summary` - Show all issues needing decisions ([#1](https://github.com/macjunkins/github-org-toolkit/issues/1))
+- [ ] `/project-status` - Summarize project board state ([#2](https://github.com/macjunkins/github-org-toolkit/issues/2))
+- [ ] `/milestone-summary` - Progress report for milestones ([#3](https://github.com/macjunkins/github-org-toolkit/issues/3))
+- [ ] `/archival-status` - Track archival progress ([#4](https://github.com/macjunkins/github-org-toolkit/issues/4))
+
+**Automation Scripts:**
+- [ ] `repo-ownership-audit.py` - Identify non-org repos ([#5](https://github.com/macjunkins/github-org-toolkit/issues/5))
+- [ ] `archive-repos-batch.sh` - Batch archive repos ([#6](https://github.com/macjunkins/github-org-toolkit/issues/6))
+- [ ] `sync-labels.sh` - Consistent labels across repos ([#7](https://github.com/macjunkins/github-org-toolkit/issues/7))
+
+**Infrastructure:**
+- [ ] Configuration system ([#8](https://github.com/macjunkins/github-org-toolkit/issues/8))
+- [ ] Documentation ([#9](https://github.com/macjunkins/github-org-toolkit/issues/9))
+- [ ] GraphQL query library ([#10](https://github.com/macjunkins/github-org-toolkit/issues/10))
+
+---
 
 ### Phase 3: Advanced Analysis 📅 (Planned)
-- [ ] `/find-blocking-issues` command
-- [ ] `/discussion-summary` command
-- [ ] `dependency-graph.py` script
-- [ ] `build-validation.sh` script
+**Milestone:** [v1.2-phase-3-analysis](https://github.com/macjunkins/github-org-toolkit/milestone/2) (6 planned issues)
+**Target:** Mar 31, 2026
+
+- `/find-blocking-issues` - Identify critical path issues
+- `/discussion-summary` - AI-powered discussion summaries
+- `/weekly-report` - Auto-generate weekly summaries
+- `dependency-graph.py` - Visualize issue dependencies
+- `build-validation.sh` - Automated build validation
+- `metrics-dashboard.py` - Org-wide metrics dashboard
+
+---
 
 ### Phase 4: Scheduled Automation 📅 (Planned)
-- [ ] `stale-cleanup.sh` (cron)
-- [ ] `weekly-report-generator.py` (cron)
-- [ ] `sync-labels.sh` (cron)
-- [ ] `metrics-dashboard.py` (cron)
+**Milestone:** [v1.3-phase-4-scheduled](https://github.com/macjunkins/github-org-toolkit/milestone/3) (6 planned issues)
+**Target:** Jun 30, 2026
+
+- `stale-cleanup.sh` - Automated stale issue cleanup (cron)
+- `weekly-report-generator.py` - Scheduled weekly reports (cron)
+- `sync-labels-cron.sh` - Scheduled label sync (cron)
+- `metrics-collector-cron.py` - Continuous metrics collection (cron)
+- CI/CD workflows - GitHub Actions integration
+- Cron setup documentation
+
+---
+
+**See the full roadmap:** [Roadmap](Roadmap.md) | [Project Board](https://github.com/users/macjunkins/projects/18)
 
 ---
 
