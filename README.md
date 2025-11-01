@@ -330,7 +330,7 @@ gh api graphql -f query="$(cat .claude/github-queries/triage-issues.graphql)" \
 
 ## Integration with RAPID-AI Framework
 
-If you use the [RAPID-AI framework](https://github.com/macjunkins/.claude-config), slash commands can invoke specialized agents:
+If you use the **Rapid AI Tool Coming Soon**
 
 ```markdown
 # .claude/commands/org-automation/triage-summary.md
