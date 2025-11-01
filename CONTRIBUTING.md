@@ -359,8 +359,9 @@ scripts/bash/                   → Shell scripts for automation
 scripts/python/                 → Python scripts for data processing
 config/                         → Configuration templates
 examples/                       → Example configurations
-docs/planning/                  → Design documents (generally read-only)
 docs/usage/                     → Usage guides and tutorials
+Roadmap.md                      → Product roadmap with user stories
+github-automation-ideas.md      → Planning document for automation ideas
 ```
 
 ---
