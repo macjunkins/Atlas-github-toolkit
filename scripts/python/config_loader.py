@@ -150,24 +150,32 @@ def validate_config(config: Dict[str, Any]) -> List[str]:
                 f"weekly_report_hour must be a number, got: {config['weekly_report_hour']}"
             )
     
+    # Validate weekly_report_discussion (can be int or string)
+    if 'weekly_report_discussion' in config:
+        disc = config['weekly_report_discussion']
+        if not isinstance(disc, (int, str)):
+            errors.append(
+                f"weekly_report_discussion must be a number or string, got: {type(disc).__name__}"
+            )
+    
     # Validate file paths exist (if specified)
-    path_fields = ['labels_source', 'tier1_repos', 'tier2_repos', 'tier3_repos']
-    for field in path_fields:
+    # Only labels_source is required; tier files are optional
+    if 'labels_source' in config and config['labels_source']:
+        path = config['labels_source']
+        if not os.path.exists(path):
+            errors.append(
+                f"Labels file not found: {path}"
+            )
+    
+    # Warn for optional tier files if they're specified but don't exist
+    tier_fields = ['tier1_repos', 'tier2_repos', 'tier3_repos']
+    for field in tier_fields:
         if field in config and config[field]:
             path = config[field]
             if not os.path.exists(path):
-                # Only warn for optional tier3_repos, error for others
-                if field == 'tier3_repos':
-                    # This is optional, skip validation
-                    continue
-                elif field in ['tier1_repos', 'tier2_repos']:
-                    # These are also optional for non-archival workflows
-                    continue
-                else:
-                    # labels_source should exist
-                    errors.append(
-                        f"File specified in '{field}' does not exist: {path}"
-                    )
+                # These are optional, so just warn
+                import sys
+                print(f"⚠️  Warning: {field} file not found: {path}", file=sys.stderr)
     
     return errors
 

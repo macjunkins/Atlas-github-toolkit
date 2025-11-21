@@ -27,7 +27,7 @@ const yamlConfigSchema = z.object({
     'Friday', 'Saturday', 'Sunday'
   ]).default('Monday'),
   weekly_report_hour: z.number().int().min(0).max(23).default(9),
-  weekly_report_discussion: z.number().int().optional(),
+  weekly_report_discussion: z.union([z.number().int(), z.string()]).optional(),
   // Allow additional custom fields
 }).passthrough();
 
