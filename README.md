@@ -387,3 +387,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 ---
 
 **Ready to take control of your GitHub organization? Let's automate the boring stuff and focus on what matters.** 🚀
+
+## Related
+
+- [Projects Index](../README.md)
