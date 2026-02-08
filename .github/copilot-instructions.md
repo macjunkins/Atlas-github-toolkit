@@ -1,8 +1,8 @@
-# GitHub Organization Toolkit - AI Coding Instructions
+# Atlas GitHub Toolkit - AI Coding Instructions
 
 ## Project Overview
 
-This is an AI-augmented toolkit for efficiently managing GitHub organizations, combining Claude Code slash commands, automation scripts, and GitHub CLI for comprehensive organization management. The project is designed to reduce manual GitHub UI navigation by 60-80% and provide AI-powered pattern recognition for organizational insights.
+This is an AI-augmented toolkit for managing GitHub organizations, being converted into the Atlas GitHub toolkit (`atlas github`). It combines agent playbooks (slash commands), deterministic automation, and the GitHub CLI for comprehensive organization management.
 
 ## Architecture: Slash Commands vs Scripts Philosophy
 
@@ -132,8 +132,8 @@ Example approval pattern:
 
 ## Key Files to Reference
 
-- `HANDOFF.md`: Complete project context and next steps
-- `docs/planning/github-automation-ideas.md`: Comprehensive automation strategy
+- `docs/prd.md`: Product roadmap and command inventory
+- `github-automation-ideas.md`: Comprehensive automation strategy
 - `.claude/commands/generic/gh-work.md`: Example of complete command structure
 - `CONTRIBUTING.md`: Git flow and contribution standards
 

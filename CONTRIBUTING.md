@@ -32,7 +32,7 @@ This project uses **Git Flow:**
 
 **Before writing code:**
 
-- Check [existing issues](https://github.com/macjunkins/github-org-toolkit/issues)
+- Check [existing issues](https://github.com/macjunkins/Atlas-github-toolkit/issues)
 - If your idea isn't there, create an issue first
 - Wait for discussion/approval (especially for big changes)
 
@@ -52,26 +52,26 @@ gh issue create --title "feat: Add stale issue cleanup script" --body "Descripti
 ### 2. Fork the Repository
 
 **On GitHub:**
-1. Go to https://github.com/macjunkins/github-org-toolkit
+1. Go to https://github.com/macjunkins/Atlas-github-toolkit
 2. Click "Fork" button (top-right)
-3. This creates `https://github.com/YOUR_USERNAME/github-org-toolkit`
+3. This creates `https://github.com/YOUR_USERNAME/Atlas-github-toolkit`
 
 **Clone YOUR fork:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/github-org-toolkit.git
-cd github-org-toolkit
+git clone https://github.com/YOUR_USERNAME/Atlas-github-toolkit.git
+cd Atlas-github-toolkit
 ```
 
 **Add upstream remote (so you can pull updates):**
 ```bash
-git remote add upstream https://github.com/macjunkins/github-org-toolkit.git
+git remote add upstream https://github.com/macjunkins/Atlas-github-toolkit.git
 
 # Verify remotes
 git remote -v
-# origin    https://github.com/YOUR_USERNAME/github-org-toolkit.git (fetch)
-# origin    https://github.com/YOUR_USERNAME/github-org-toolkit.git (push)
-# upstream  https://github.com/macjunkins/github-org-toolkit.git (fetch)
-# upstream  https://github.com/macjunkins/github-org-toolkit.git (push)
+# origin    https://github.com/YOUR_USERNAME/Atlas-github-toolkit.git (fetch)
+# origin    https://github.com/YOUR_USERNAME/Atlas-github-toolkit.git (push)
+# upstream  https://github.com/macjunkins/Atlas-github-toolkit.git (fetch)
+# upstream  https://github.com/macjunkins/Atlas-github-toolkit.git (push)
 ```
 
 ---
@@ -193,8 +193,8 @@ git push origin issue-23-repo-ownership-audit
 ### 7. Create Pull Request
 
 **Pull Request targets:**
-- **From:** `YOUR_USERNAME/github-org-toolkit` branch `issue-23-repo-ownership-audit`
-- **To:** `macjunkins/github-org-toolkit` branch **`dev`** ⚠️ IMPORTANT: Target `dev`, NOT `main`
+- **From:** `YOUR_USERNAME/Atlas-github-toolkit` branch `issue-23-repo-ownership-audit`
+- **To:** `macjunkins/Atlas-github-toolkit` branch **`dev`** ⚠️ IMPORTANT: Target `dev`, NOT `main`
 
 **Use the toolkit:**
 ```bash
@@ -206,7 +206,7 @@ git push origin issue-23-repo-ownership-audit
 ```bash
 # This creates PR from your fork's branch to upstream dev
 gh pr create \
-  --repo macjunkins/github-org-toolkit \
+  --repo macjunkins/Atlas-github-toolkit \
   --base dev \
   --head YOUR_USERNAME:issue-23-repo-ownership-audit \
   --title "feat: Add repo ownership audit script" \
@@ -216,8 +216,8 @@ gh pr create \
 **Or via GitHub web UI:**
 1. Go to YOUR fork on GitHub
 2. Click "Contribute" → "Open pull request"
-3. **⚠️ IMPORTANT:** Change base to `macjunkins/github-org-toolkit:dev`
-4. Ensure compare is `YOUR_USERNAME/github-org-toolkit:issue-23-repo-ownership-audit`
+3. **⚠️ IMPORTANT:** Change base to `macjunkins/Atlas-github-toolkit:dev`
+4. Ensure compare is `YOUR_USERNAME/Atlas-github-toolkit:issue-23-repo-ownership-audit`
 5. Fill in title and description
 6. Click "Create pull request"
 
@@ -291,7 +291,7 @@ git push origin --delete issue-23-repo-ownership-audit
 
 **Verify the issue closed:**
 ```bash
-gh issue view 23 --json state --repo macjunkins/github-org-toolkit
+gh issue view 23 --json state --repo macjunkins/Atlas-github-toolkit
 # Should show: "state": "CLOSED"
 ```
 
@@ -301,7 +301,7 @@ gh issue view 23 --json state --repo macjunkins/github-org-toolkit
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│ macjunkins/github-org-toolkit (UPSTREAM - original repo)        │
+│ macjunkins/Atlas-github-toolkit (UPSTREAM - original repo)        │
 │                                                                  │
 │  main ◄────── (stable releases only, maintainers merge here)   │
 │    ▲                                                             │
@@ -315,7 +315,7 @@ gh issue view 23 --json state --repo macjunkins/github-org-toolkit
                           │ (from your fork's feature branch to upstream dev)
                           │
 ┌──────────────────────────────────────────────────────────────────┐
-│ YOUR_USERNAME/github-org-toolkit (ORIGIN - your fork)           │
+│ YOUR_USERNAME/Atlas-github-toolkit (ORIGIN - your fork)           │
 │                                                                  │
 │  main ───────────────────────────►  (track upstream main)       │
 │                                                                  │
@@ -546,9 +546,9 @@ if __name__ == "__main__":
 # ONE-TIME SETUP
 # 1. Fork repo on GitHub
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/github-org-toolkit.git
-cd github-org-toolkit
-git remote add upstream https://github.com/macjunkins/github-org-toolkit.git
+git clone https://github.com/YOUR_USERNAME/Atlas-github-toolkit.git
+cd Atlas-github-toolkit
+git remote add upstream https://github.com/macjunkins/Atlas-github-toolkit.git
 
 # FOR EACH NEW FEATURE
 # 1. Create issue, get issue number (e.g., #23)
@@ -577,7 +577,7 @@ git push origin issue-23-description
 # 7. Create PR (targets upstream dev, NOT main)
 /create-pr dev
 # OR
-gh pr create --repo macjunkins/github-org-toolkit --base dev --head YOUR_USERNAME:issue-23-description
+gh pr create --repo macjunkins/Atlas-github-toolkit --base dev --head YOUR_USERNAME:issue-23-description
 
 # 8. Respond to feedback (repeat as needed)
 # ... make changes ...

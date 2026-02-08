@@ -1,5 +1,8 @@
-# Product Roadmap
-## GitHub Organization Toolkit
+# Atlas GitHub Toolkit PRD
+
+**Note (Feb 2026):** This roadmap originated in the `github-org-toolkit` repo. It now guides the Atlas GitHub toolkit, a standalone project that will merge into Atlas as the `atlas github` command group. Slash commands referenced below are legacy playbooks to be ported into Atlas tools and/or the `~/.agents` hub.
+
+## Atlas GitHub Toolkit
 
 **Version:** 1.0
 **Last Updated:** 2025-11-01
@@ -19,8 +22,8 @@ A comprehensive toolkit combining AI-assisted workflows, deterministic automatio
 - Context switching between repos kills productivity
 
 ### Solution
-1. **AI-assisted workflows** via Claude Code slash commands (interactive, context-aware)
-2. **Deterministic automation** via Bash/Python scripts (repeatable, schedulable)
+1. **AI-assisted workflows** via agent playbooks (slash commands today, Atlas tools tomorrow)
+2. **Deterministic automation** via scripts and `gh` CLI (repeatable, schedulable)
 3. **Token-efficient operations** using GitHub CLI (`gh`) and GraphQL caching
 
 ### Success Metrics
